@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #b7e8ff;
+  --primary-color: #e5f7ff;
   --secondary-color: #0b1f24;
   --accent-color: #8bfff1;
   --text-color: #333;
@@ -144,5 +144,46 @@ body {
 @media (max-width: 768px) {
   .resume {
     grid-template-columns: 1fr;
+  }
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  /* Force exact colors & backgrounds */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #1b3c53;
+  }
+
+  /* Remove browser print quirks */
+  body {
+    padding: 0;
+  }
+
+  /* Center resume on page */
+  .resume {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    .resume {
+      grid-template-columns: 320px 1fr !important;
+    }
+  }
+
+  /* Disable effects that can shift layout */
+  * {
+    animation: none !important;
+    transition: none !important;
   }
 }
