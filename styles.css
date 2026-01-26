@@ -70,6 +70,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.portfolio-link {
+  color: var(--primary-color);
+  font-weight: bold;
+}
 
 .sidebar ul {
   list-style: none;
