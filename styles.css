@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #b7e8ff;
+  --secondary-color: #0b1f24;
+  --accent-color: #8bfff1;
+  --text-color: #333;
+  --background-color: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  padding: 2rem;
+  background: #1b3c53;
+  font-family: "Comic Neue", cursive;
+}
+
+.resume {
+  max-width: 850px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  background: ;
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+  background: #0b1f24;
+  color: var(--primary-color);
+  padding: 2rem;
+}
+
+.profile-pic {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-pic img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary-color);
+}
+
+.sidebar h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.role {
+  text-align: center;
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.sidebar section {
+  margin-bottom: 1.8rem;
+}
+
+.sidebar h2 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  color: var(--primary-color);
+}
+
+.sidebar li,
+.sidebar p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: var(--primary-color);
+}
+
+/* RIGHT CONTENT */
+.content {
+  padding: 2.5rem;
+  background-color: var(--primary-color);
+  color: #0b1f24;
+}
+
+.content section {
+  margin-bottom: 2.5rem;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.content p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.job,
+.education {
+  margin-bottom: 1.8rem;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-header h3,
+.education h3 {
+  font-size: 1.1rem;
+}
+
+.job-header span,
+.education span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.company {
+  font-style: italic;
+  margin: 0.3rem 0 0.6rem;
+}
+
+.content ul {
+  padding-left: 1.2rem;
+}
+
+.content li {
+  margin-bottom: 0.4rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .resume {
+    grid-template-columns: 1fr;
+  }
+}
