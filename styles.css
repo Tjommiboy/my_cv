@@ -73,6 +73,7 @@ body {
 .portfolio-link {
   color: var(--primary-color);
   font-weight: bold;
+  text-align: center;
 }
 
 .sidebar ul {
